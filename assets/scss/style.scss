@@ -1,13 +1,19 @@
 /*
-Theme Name: Supadu Test
+Theme Name: 
 Theme URI: 
 Author: Nadezda Gurska
 Author URI: 
-Description: the test done for Supadu based on CDN Bootstrap
+Description: 
 Version: 1.1
 License: GNU 
 License URI:
 Tags:
 Text Domain: 
 */
+
 @import "_variables.scss";
+@import "_typography.scss";
+@import "_base.scss";
+@import "navigation.scss"; // logo and navigation styles
+@import "mainslider.scss";
+@import "footer.scss";

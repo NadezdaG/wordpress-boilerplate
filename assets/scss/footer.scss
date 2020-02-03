@@ -1,0 +1,25 @@
+footer#footer {
+    background-color: $color-white;
+    padding: 3em 0;
+    width: 100%;
+    margin-top: 1.5em;
+    .widget {
+        &__title {
+            text-transform: uppercase;
+            color: $color-accent;
+        }
+    }
+    ul {
+        display: block;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li {
+            padding: 0px;
+            margin: 0px;
+            a {
+                color: lighten($color-black, 30%);
+            }
+        }
+    }
+}

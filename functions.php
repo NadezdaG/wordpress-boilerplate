@@ -16,7 +16,7 @@
 /***************************************************************************/
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
-
+add_theme_support( 'custom-logo' );
 
 
 /***************************************************************************/
@@ -41,18 +41,18 @@ require_once get_template_directory() . '/classes/class-wp-bootstrap-navwalker.p
 /***************************************************************************/
 
 // Adding required scripts and styles: Bootstrap, fonts
-function Supadu_enqueue() {
+function WP_Nadezda_enqueue() {
     wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
     if($_SERVER['SERVER_NAME'] != 'localhost'){
       wp_enqueue_style('style', get_template_directory_uri() . '/style.min.css');
     } else{
       wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
     }
-    wp_enqueue_script( 'customjs', get_template_directory_uri() . '/assets/js/custom.min.js', array('jquery'), '', true );
+    wp_enqueue_script( 'customjs', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), '', true );
     //wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
     wp_enqueue_script( 'bootstrapcdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array('jquery'), '', true );
 }
-add_action('wp_enqueue_scripts', 'Supadu_enqueue');
+add_action('wp_enqueue_scripts', 'WP_Nadezda_enqueue');
 
 
 /***************************************************************************/
@@ -63,11 +63,18 @@ add_action('wp_enqueue_scripts', 'Supadu_enqueue');
 /***************************************************************************/
 /***************************************************************************/
 
-register_nav_menus( array(
-    'header' => 'Primary Menu',
-  ) );
 
-function Supadu_widgets_init() {
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header' => __( 'Primary Menu' ),
+      'extra-menu' => __( 'Extra Menu' ) // second menu, supposed for footer navigation but decided to show how to work with widgets
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+function WP_Nadezda_widgets_init() {
 
   register_sidebar( array(
     'name'          => 'Footer 1',
@@ -105,7 +112,7 @@ function Supadu_widgets_init() {
   ) );
 
 }
-add_action( 'widgets_init', 'Supadu_widgets_init' );
+add_action( 'widgets_init', 'WP_Nadezda_widgets_init' );
 
 
 /***************************************************************************/

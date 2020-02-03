@@ -1,0 +1,20 @@
+.navbar {
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+    .nav-link {
+        color: $color-black;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid $color-light-grey;
+        transition: border-color 1s;
+        &:hover {
+            border-bottom: 2px solid $color-accent;
+        }
+    }
+    .custom-logo-link img {
+        display: inline-block;
+        width: 150px;
+        height: auto;
+    }
+}

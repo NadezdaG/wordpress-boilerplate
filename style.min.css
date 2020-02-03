@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,400&display=swap");body{font-weight:200}
+a{color:#42aab0;text-decoration:none}
+h1,h2,h3,h4,.h1,.h2,.h3,.h4{font-weight:200}
+h2,.h2{font-size:1.3em}
+h3,.h3{font-size:1.5em}
+.ng-container{display:block;position:relative;width:90%;margin:2em auto;max-width:1200px}
+.ng-container:after{content:"";display:table;clear:both}
+.ng-container section.mainContent{float:left;width:65%;margin-right:5%}
+.ng-container section.mainContent a{border-bottom:1px solid #42aab0}
+.ng-container aside{float:left;width:30%}
+.ng-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+.ng_post{background-color:#efefef;padding:0;margin-bottom:2em;border-top-left-radius:30%}
+.ng_post h3{text-transform:uppercase;margin-top:.5em}
+.ng_post img{width:100%;height:auto;border-top-left-radius:30%}
+.ng_post .btn{width:100%;border-radius:0}
+.ng_post .ng_post__meta{font-size:.8em;color:#999}
+.ng_post .ng_post__content{padding:0 1em}
+.ng_fade{-webkit-animation-name:fade;animation-name:fade;-webkit-animation-duration:1.5s;animation-duration:1.5s}
+.navbar .navbar-collapse{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
+.navbar .nav-link{color:#212121;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #efefef;-webkit-transition:border-color 1s;transition:border-color 1s}
+.navbar .nav-link:hover{border-bottom:2px solid #42aab0}
+.navbar .custom-logo-link img{display:inline-block;width:150px;height:auto}
+.ng_slider{width:100%;height:80vh;min-height:600px;padding:0;margin:0;z-index:1;display:block;position:relative;overflow:hidden}
+.ng_slider__slide{display:none;padding:0;margin:0;width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center}
+.ng_slider__slide__content{display:block;position:relative;max-width:560px;min-width:250px;text-align:center;color:#fff;padding:2em;background:rgba(33,33,33,0.8);z-index:3}
+.ng_slider__slide__content h2{text-transform:uppercase;font-size:2.5em}
+.ng_slider__slide__content .btn.btn-dark{display:inline-block;background-color:#212121;color:#fff;padding:1em 2.5em;margin-top:30px;text-decoration:none}
+.ng_slider__slide.slide1{background:url("assets/img/autumn-219972_1280.jpg") no-repeat center center fixed;background-size:cover}
+.ng_slider__slide.slide2{background:url("assets/img/forest-931706_1280.jpg") no-repeat center center fixed;background-size:cover}
+.ng_slider__slide.slide3{background:url("assets/img/landscape-615429_1920.jpg") no-repeat center center fixed;background-size:cover}
+.ng_slider__arrows{position:absolute;z-index:999;height:100%;width:100%}
+.ng_slider__arrows__left,.ng_slider__arrows__right{cursor:pointer;position:absolute;text-decoration:none;top:50%;width:auto;padding:16px;margin-top:-22px;color:white;font-weight:bold;font-size:18px;-webkit-transition:.6s ease;transition:.6s ease;border-radius:0 3px 3px 0}
+.ng_slider__arrows__right{right:0;border-radius:3px 0 0 3px}
+.ng_slider__arrows__left:hover,.ng_slider__arrows__right:hover{background-color:rgba(33,33,33,0.8);color:white;text-decoration:none}
+footer#footer{background-color:#fff;padding:3em 0;width:100%;margin-top:1.5em}
+footer#footer .widget__title{text-transform:uppercase;color:#42aab0}
+footer#footer ul{display:block;list-style:none;padding:0;margin:0}
+footer#footer ul li{padding:0;margin:0}
+footer#footer ul li a{color:#6e6d6d}
+@media all and (max-width:980px){.ng-container section.mainContent,.ng-container aside{width:100%;float:none;margin:0}
+.ng-flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+}@media all and (max-width:780px){.ng_slider{height:auto}
+}@-webkit-keyframes fade{from{opacity:.4}
+to{opacity:1}
+}@keyframes fade{from{opacity:.4}
+to{opacity:1}
+}

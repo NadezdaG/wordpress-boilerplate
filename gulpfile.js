@@ -29,15 +29,15 @@
 
 // START Editing Project Variables.
 // Project related.
-var project                 = 'Scan WP Blog'; // Project Name.
-var projectURL              = 'http://localhost/scanwpnewblog/'; // Local project URL of your already running WordPress site. Could be something like local.dev or localhost:8888.
+var project                 = 'Nadezda WP Theme'; // Project Name.
+var projectURL              = 'http://localhost:30/wordpress'; // Local project URL of your already running WordPress site. Could be something like local.dev or localhost:8888.
 var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 // Translation related.
-var text_domain             = 'Scan WP Blog'; // Your textdomain here.
-var translationFile         = 'WPGULP.pot'; // Name of the transalation file.
+var text_domain             = 'Nadezda WP Theme'; // Your textdomain here.
+var translationFile         = ''; // Name of the transalation file.
 var translationDestination  = './languages'; // Where to save the translation files.
-var packageName             = 'WPGULP'; // Package name.
+var packageName             = ''; // Package name.
 var bugReport               = ''; // Where can users report bugs.
 var lastTranslator          = ''; // Last translator Email ID.
 var team                    = ''; // Team's Email ID.

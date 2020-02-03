@@ -1,0 +1,95 @@
+/**************************
+**************************/
+
+/* example of column layout */
+
+.ng-container {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 2em auto;
+    max-width: 1200px;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    section.mainContent {
+        float: left;
+        width: 65%;
+        margin-right: 5%;
+        a {
+            border-bottom: 1px solid $color-accent;
+        }
+    }
+    aside {
+        float: left;
+        width: 30%;
+    }
+    @media all and (max-width:980px) {
+        section.mainContent, aside {
+            width: 100%;
+            float: none;
+            margin: 0px;
+        }
+    }
+}
+/*example of flex layout */
+
+.ng-flex {
+    display: flex;
+    flex-direction: row;
+    @media all and (max-width: 980px) {
+        flex-direction:column;
+    }
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+.ng_post {
+    background-color: $color-light-grey;
+    padding: 0px;
+    margin-bottom: 2em;
+    border-top-left-radius: 30%;
+    h3 {
+        text-transform: uppercase;
+        margin-top: 0.5em;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 30%;
+    }
+    .btn {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .ng_post__meta {
+        font-size: 0.8em;
+        color: #999999;
+    }
+    .ng_post__content {
+        padding: 0px 1em;
+    }
+}
+/* Fading animation */
+
+.ng_fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
