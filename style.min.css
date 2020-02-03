@@ -21,7 +21,8 @@ h3,.h3{font-size:1.5em}
 .navbar .nav-link:hover{border-bottom:2px solid #42aab0}
 .navbar .custom-logo-link img{display:inline-block;width:150px;height:auto}
 .ng_slider{width:100%;height:80vh;min-height:600px;padding:0;margin:0;z-index:1;display:block;position:relative;overflow:hidden}
-.ng_slider__slide{display:none;padding:0;margin:0;width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center}
+.ng_slider__slide{padding:0;margin:0;width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center;opacity:0;-webkit-transition:opacity 1s;transition:opacity 1s}
+.ng_slider__slide.active{opacity:1}
 .ng_slider__slide__content{display:block;position:relative;max-width:560px;min-width:250px;text-align:center;color:#fff;padding:2em;background:rgba(33,33,33,0.8);z-index:3}
 .ng_slider__slide__content h2{text-transform:uppercase;font-size:2.5em}
 .ng_slider__slide__content .btn.btn-dark{display:inline-block;background-color:#212121;color:#fff;padding:1em 2.5em;margin-top:30px;text-decoration:none}

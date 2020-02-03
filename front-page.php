@@ -9,7 +9,7 @@
       </a>
     </div>
 
-        <div class="ng_slider__slide slide1 ng_fade">
+        <div class="ng_slider__slide slide1 active">
             <div class="ng_slider__slide__content">
               <h2>Text 1</h2>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
@@ -18,14 +18,14 @@
         </div>
 
 
-      <div class="ng_slider__slide slide2 ng_fade">
+      <div class="ng_slider__slide slide2">
             <div class="ng_slider__slide__content slide2">
               <h2>Text 2</h2>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
               <a href="#" class="btn btn-dark" title="">View more</a>
           </div>
         </div>
-        <div class="ng_slider__slide slide3 ng_fade">
+        <div class="ng_slider__slide slide3">
             <div class="ng_slider__slide__content">
               <h2>Text 3</h2>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
